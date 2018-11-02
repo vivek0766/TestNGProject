@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="udemy.testNG.listeners.TestNGListeners" />
+	</listeners>
+	<parameter name="DATA" value="westernunion.com">
+	</parameter>
+	<test name="Parameterization">
+		<classes>
+			<class name="udemy.testNG.parameters.ParametersExample" />
+		</classes>
+	</test>
+
+
+	<test name="Listeners">
+		<classes>
+			<class name="udemy.testNG.listeners.TestNGListeners" />
+			<class name="udemy.testNG.listeners.AssertionExample"/>
+		</classes>
+	</test>
+
+</suite> 

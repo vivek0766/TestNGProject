@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Testing Loans">
+
+		<classes>
+			<class name="udemy.testNG.loans.LendingTree">
+				<methods>
+					<exclude name="lendingTreeHome.*"></exclude>
+				</methods>
+			</class>
+
+			<class name="udemy.testNG.days.Day1" />
+			<class name="udemy.testNG.loans.AmexLoans" />
+		</classes>
+
+	</test>
+
+	<test name="Test">
+
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="udemy.testNG.days.Day2" />
+			<class name="udemy.testNG.loans.AmexLoans" />
+			<class name="udemy.testNG.days.Day1" />
+			<!--It will find the provided group name present in above classes -->
+		</classes>
+	</test>
+
+
+</suite> 
